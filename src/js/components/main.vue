@@ -9,6 +9,7 @@
             <section-our-resume></section-our-resume>
             <section-our-testimonial></section-our-testimonial>
             <section-clients></section-clients>
+            <section-contact-me></section-contact-me>
         </div>
     </main>
 </template>
@@ -39,4 +40,6 @@
     };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+</style>

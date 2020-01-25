@@ -1,5 +1,13 @@
-main{
-    section{
-        min-height:80vh;
+main {
+
+    section {
+        min-height: 80vh;
+
+        padding-top: 20px;
+        @media(min-width: 992px) {
+            padding-top: 100px;
+        }
+
+
     }
 }

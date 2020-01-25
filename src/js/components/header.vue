@@ -18,22 +18,22 @@
 
                             <ul class="navbar-nav mr-0 ml-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home</a>
+                                    <a class="nav-link" href="#" @click.stop.prevent="scrollTo('#SectionHome', 200)">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <a class="nav-link" href="#" @click.stop.prevent="scrollTo('#SectionOurServices', 1000)">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Works</a>
+                                    <a class="nav-link" href="#" @click.stop.prevent="scrollTo('#SectionLatestWork', 1000)">Works</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Resume</a>
+                                    <a class="nav-link" href="#" @click.stop.prevent="scrollTo('#SectionOurResume', 1000)">Resume</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Testimonials</a>
+                                    <a class="nav-link" href="#" @click.stop.prevent="scrollTo('#SectionOurTestimonial', 1000)">Testimonials</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#" @click.stop.prevent="scrollTo('#SectionContactMe', 1000)">Contact</a>
                                 </li>
                             </ul>
 
@@ -56,11 +56,23 @@
         methods: {
             changeLocale: function (locale) {
                 Util.i18n_locale(locale);
+            },
+
+            scrollTo: function (element, seconds) {
+                Util.scrollTo(element, seconds);
             }
         }
     };
 </script>
 
 <style scoped lang="scss">
-
+    header {
+        @media(min-width: 992px) {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+    }
 </style>
