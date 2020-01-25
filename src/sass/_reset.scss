@@ -1,0 +1,11 @@
+*, *:before, *:after, *:focus, *:hover{
+    outline: none !important;
+}
+
+body{
+    color: $color_text;
+
+    a, button {
+        color: $color_text;
+    }
+}

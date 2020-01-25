@@ -1,0 +1,32 @@
+{
+  "name": "andreeaghenea.github.io",
+  "version": "1.0.0",
+  "description": "cv",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "retrocib.github.io",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreeaghenea/andreeaghenea.github.io.git"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.4.1",
+    "cross-env": "^5.2.1",
+    "jquery": "^3.2",
+    "laravel-mix": "^4.0.13",
+    "popper.js": "^1.16.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^7.3.1",
+    "vue": "^2.5.22",
+    "vue-i18n": "^8.15.3",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
