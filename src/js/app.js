@@ -1,4 +1,5 @@
 import $ from "jquery";
+import MobileDetect from "mobile-detect";
 import VueTypedJs from 'vue-typed-js';
 import Vue from "vue";
 //
@@ -8,6 +9,7 @@ import {Util} from "./util";
 window.$ = window.jQuery = $;
 window.i18n = i18n;
 window.Util = Util;
+window.MobileDetect = MobileDetect;
 //
 Vue.use(VueTypedJs);
 //
