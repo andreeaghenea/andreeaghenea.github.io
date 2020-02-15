@@ -411,6 +411,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "SectionHome",
@@ -18350,6 +18352,15 @@ var render = function() {
             _vm._m(0)
           ],
           1
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "main-btn mt-2 mt-lg-5",
+            attrs: { href: "cv--andreea-ghenea.pdf", download: "" }
+          },
+          [_vm._v("\n            Download CV\n        ")]
         )
       ]
     ),

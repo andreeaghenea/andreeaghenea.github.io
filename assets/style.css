@@ -109,6 +109,27 @@ body a:hover, body button:hover {
   color: #333;
 }
 
+.main-btn {
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 2px solid #18c9de;
+  color: #18c9de;
+  border-radius: 4px;
+  padding: 13px 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: transparent;
+}
+.main-btn:hover, .main-btn:focus {
+  text-decoration: none;
+  background-color: #18c9de;
+  color: #fff;
+  border-color: #18c9de;
+}
+
 header.menu-shrink {
   background-color: #fff;
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.02);
@@ -136,7 +157,6 @@ header .navbar-brand h2 {
 }
 
 main section {
-  min-height: 80vh;
   padding-top: 20px;
 }
 @media (min-width: 992px) {

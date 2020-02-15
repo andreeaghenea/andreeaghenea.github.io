@@ -27,8 +27,10 @@
                     </span>
                 </div>
             </h1>
+            <a href="cv--andreea-ghenea.pdf" download class="main-btn mt-2 mt-lg-5">
+                Download CV
+            </a>
         </div>
-
         <div class="col-12 col-md-5 col-lg-5 order-1 order-lg-2 ">
             <img :src="'assets/img/section_home/portrait.jpg'" class="img-fluid"/>
         </div>
