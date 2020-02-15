@@ -4,11 +4,19 @@ export const Util = {
     },
 
     scrollTo: function (element = "", seconds = 1000) {
+        // preia offset
+        var offset_top = $(element).offset().top;
+        // preia inaltime meniu header (daca e vizibil butonul)
+        var step = $('header button.navbar-toggler').css('display') === 'none'
+            ? 0
+            : parseInt($('header div.navbar-collapse').height(), 10);
+        // daca meniul e deschis, se strange
         $('.navbar-collapse').collapse('hide');
+        // salt cu animatie la element
         $("html, body")
             .delay(300)
             .animate({
-                scrollTop: $(element).offset().top
+                scrollTop: offset_top - step
             }, seconds);
     },
 
