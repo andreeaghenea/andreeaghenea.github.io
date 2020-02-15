@@ -22,15 +22,19 @@
         mounted: function () {
             var self = this;
 
+            $('header').removeClass('menu-shrink');
             $('#scrollToTop').fadeOut('fast');
+            //
             $(window).on('scroll', function () {
                 self.secondsToTop = $(window).scrollTop() / $(window).innerHeight();
                 self.secondsToTop = 1200 * self.secondsToTop;
                 //
-                if(this.scrollY > this.screen.height){
+                if(this.scrollY > (this.screen.height / 3 )){
                     $('#scrollToTop').fadeIn('slow');
+                    $('header').addClass('menu-shrink');
                 }else{
                     $('#scrollToTop').fadeOut('slow');
+                    $('header').removeClass('menu-shrink');
                 }
             })
         },

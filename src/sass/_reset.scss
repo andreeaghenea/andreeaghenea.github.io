@@ -8,5 +8,9 @@ body{
 
     a, button {
         color: $color_text;
+
+        &:hover{
+            color:$color_text;
+        }
     }
 }

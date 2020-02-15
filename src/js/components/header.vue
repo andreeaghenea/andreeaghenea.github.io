@@ -5,9 +5,13 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg">
 
-                        <a class="navbar-brand" href="#">
-                            <h2>Andreea GHENEA</h2>
-                        </a>
+                        <div class="navbar-brand" href="#">
+                            <h2>
+                                &lt;
+                                A / G
+                                &gt;
+                            </h2>
+                        </div>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="icon-bars"></span>

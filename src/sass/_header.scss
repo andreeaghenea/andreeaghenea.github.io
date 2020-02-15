@@ -1,9 +1,32 @@
-header{
-    a, button{
-        font-weight: 600;
-        transition: all 0.3s ease-in-out;
-        &:hover{
-          color: $color_primary;
-        }
+header {
+
+  &.menu-shrink {
+    background-color: #fff;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.02);
+    width: 100%;
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    animation-name: fadeInDown;
+  }
+
+
+  a, button {
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+
+    &:not(.navbar-brand):hover {
+      color: $color_primary;
     }
+  }
+
+  .navbar-brand {
+    h2 {
+      font-family: 'Nanum Pen Script', cursive;
+      font-size: 3rem;
+    }
+  }
 }
