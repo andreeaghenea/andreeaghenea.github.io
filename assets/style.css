@@ -1,4 +1,4 @@
-/*!
+@import url(https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap);/*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -105,14 +105,34 @@ body {
 body a, body button {
   color: #333;
 }
+body a:hover, body button:hover {
+  color: #333;
+}
 
+header.menu-shrink {
+  background-color: #fff;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.02);
+  width: 100%;
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
 header a, header button {
   font-weight: 600;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-header a:hover, header button:hover {
+header a:not(.navbar-brand):hover, header button:not(.navbar-brand):hover {
   color: #18c9de;
+}
+header .navbar-brand h2 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 3rem;
 }
 
 main section {
