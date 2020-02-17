@@ -71,6 +71,24 @@
     export default {
         name: "SectionContactMe",
         props: {},
+        data: function () {
+            return {
+                name: '',
+                email: '',
+                subject: '',
+                message: ''
+            }
+        },
+        computed: {
+            mail_href: function () {
+                var href = "";
+                href += "mailto:" + this.$t('contact.content.emails')[0];
+                href += "?subject=" + encodeURI(this.name.trim() + ' | ' + this.subject.trim());
+                href += "&body=" + encodeURI(this.message.trim());
+
+                return href;
+            }
+        },
         mounted: function () {
         },
         methods: {}

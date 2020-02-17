@@ -38,22 +38,33 @@ export const enUK =  {
       ]
     },
     contact: {
-      title: "CONTACT",
-      content: {
-        emails: ["retrocib@gmail.com"],
-        phones: ["(+40) 728 462 884"],
-        address: ["Colentina, Bucuresti / RO", "Calarasi, Calarasi / RO"],
-        socials: [
-          {
-            title: "facebook",
-            link: "https://facebook.com"
-          },
-          {
-            title: "linkedin",
-            link: "https://linkedin.com"
-          }
-        ]
-      }
+        title: "Contact Me",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        content: {
+            emails: ["contact@angreeaghenea.com"],
+            phones: [
+                {
+                    title: '(0049) 173 707 8695',
+                    number: '+491737078695'
+                }
+            ],
+            address: [
+                {
+                    title: 'München, Deutschland',
+                    link: 'https://www.google.de/maps/place/Munich,+Germany/@48.1360411,11.5977896,12z'
+                }
+            ],
+            socials: [
+                {
+                    title: "facebook",
+                    link: "https://facebook.com"
+                },
+                {
+                    title: "linkedin",
+                    link: "https://linkedin.com"
+                }
+            ]
+        }
     },
     skills: {
       title: "SKILLS",
