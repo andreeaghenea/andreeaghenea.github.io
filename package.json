@@ -17,7 +17,7 @@
     "url": "git+https://github.com/andreeaghenea/andreeaghenea.github.io.git"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "cross-env": "^5.2.1",
     "jquery": "^3.2",
